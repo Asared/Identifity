@@ -173,8 +173,7 @@ namespace WindowsFormsApp1
                 button3.Location = new Point(548, 315);
                 button1.Location = new Point(467, 315);
                 label1.Location = new Point(467, 300);
-                label1.Enabled = false;
-                label1.Visible = false;
+                label1.Text = "";
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox3.Text = "";
@@ -249,8 +248,7 @@ namespace WindowsFormsApp1
                         button3.Location = new Point(548, 315);
                         button1.Location = new Point(467, 315);
                         label1.Location = new Point(467, 300);
-                        label1.Enabled = false;
-                        label1.Visible = false;
+                        label1.Text = "";
                         textBox1.Text = "";
                         textBox2.Text = "";
                         button4.Enabled = true;
@@ -277,6 +275,7 @@ namespace WindowsFormsApp1
                 button3.Location = new Point(506, 354);
                 button1.Location = new Point(564, 504);
                 label1.Location = new Point(467, 339);
+                label1.Text = "";
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox3.Text = "";
