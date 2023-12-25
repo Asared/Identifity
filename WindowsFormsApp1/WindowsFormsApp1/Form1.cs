@@ -186,6 +186,7 @@ namespace WindowsFormsApp1
             string down = "cdefghijklmnopqabrstuvwxyz";
             string numbers = "1234567890";
             int t = 0;
+            bool exit = false;
             
             for (int i = 0;i<password.Length;i++)
             {
@@ -194,10 +195,14 @@ namespace WindowsFormsApp1
                     if (password[i] == up[j])
                     {
                         t++;
+                        exit = true;
                         break;
                     }
                 }
+                if (exit)
+                    break;
             }
+            exit= false;
             for (int i = 0; i < password.Length; i++)
             {
                 for (int j = 0; j < down.Length; j++)
@@ -205,10 +210,14 @@ namespace WindowsFormsApp1
                     if (password[i] == down[j])
                     {
                         t++;
+                        exit = true;
                         break;
                     }
                 }
+                if (exit)
+                    break;
             }
+            exit = false;
             for (int i = 0; i < password.Length; i++)
             {
                 for (int j = 0; j < numbers.Length; j++)
@@ -216,11 +225,14 @@ namespace WindowsFormsApp1
                     if (password[i] == numbers[j])
                     {
                         t++;
+                        exit = true;
                         break;
                     }
                 }
+                if (exit)
+                    break;
             }
-            if(t<password.Length)
+            if(t<3)
             {
                 isStrong = false;
             }    
